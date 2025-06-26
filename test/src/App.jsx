@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -17,11 +15,6 @@ function App() {
   const toggleTodo = (index) => {
     const newTodos = [...todos];
     newTodos[index].completed = !newTodos[index].completed;
-    setTodos(newTodos);
-  }
-
-  const deleteTodo = (index) => {
-    const newTodos = todos.filter((_, i) => i !== index);
     setTodos(newTodos);
   }
 
