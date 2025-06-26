@@ -18,6 +18,11 @@ function App() {
     setTodos(newTodos);
   }
 
+  const deleteTodo = (index) => {
+    const newTodos = todos.filter((_, i) => i !== index);
+    setTodos(newTodos);
+  };
+
   return (
     <>
       <div className="app">
